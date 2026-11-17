@@ -1,0 +1,8 @@
+{
+  "id": "merkury-theme",
+  "name": "Tema Merkury",
+  "description": "Tema MERKURY per MercurioCMS 1.0.0: impostazioni native condivise in lettura e scrittura, archivio cronologico rispettoso delle pagine di destinazione CMS e preferenze grafiche persistenti.",
+  "version": "1.0.3",
+  "min_cms_version": "1.0.0",
+  "entry": "plugin.php"
+}

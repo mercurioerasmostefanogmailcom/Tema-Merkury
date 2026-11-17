@@ -1,0 +1,304 @@
+@font-face{font-family:Manrope;src:url('../fonts/manrope/Manrope-VariableFont_wght.woff2') format('woff2');font-weight:200 800;font-style:normal;font-display:swap}
+@font-face{font-family:Literata;src:url('../fonts/literata/Literata72pt-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:Literata;src:url('../fonts/literata/Literata72pt-SemiBold.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap}
+:root{--merkury-primary:#174A78;--merkury-accent:#4D91C6;--merkury-ink:#10243A;--merkury-paper:#F7FAFC;--merkury-card:#fff;--merkury-line:#dce5ed;--merkury-muted:#647789;--merkury-chrome-bg:#174A78;--merkury-chrome-text:#fff;color-scheme:light}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body.merkury-body{margin:0;background:var(--merkury-paper);color:var(--merkury-ink);font-family:Manrope,Arial,sans-serif;font-size:16px;line-height:1.7}body.merkury-body a{color:var(--merkury-primary);text-decoration:none}body.merkury-body a:hover{color:var(--merkury-accent)}.site-shell{width:min(1184px,calc(100% - 40px));margin-inline:auto}
+.merkury-site-header{background:var(--header-bg,var(--merkury-chrome-bg));color:var(--header-text,var(--merkury-chrome-text));box-shadow:0 3px 18px #10243a14}.merkury-header-inner{width:min(1184px,calc(100% - 40px));margin:auto;min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:26px}.merkury-compact-header .merkury-header-inner{min-height:62px}.merkury-brand{display:flex;align-items:center;gap:12px;color:var(--merkury-chrome-text)!important;font-size:1.3rem;font-weight:800;letter-spacing:-.035em}.merkury-brand img{max-width:180px;max-height:60px;object-fit:contain}.merkury-mark{width:42px;height:42px;border-radius:11px;background:var(--merkury-primary);display:inline-flex;align-items:center;justify-content:center;color:white;font-size:24px;font-weight:900}.merkury-mark img{width:100%;height:100%;object-fit:contain}.merkury-nav-wrap{display:flex;align-items:center;justify-content:center;gap:7px;flex-wrap:wrap}.merkury-nav-wrap a{color:var(--merkury-chrome-text)!important;padding:9px 13px;border-radius:7px;font-size:.93rem;font-weight:650}.merkury-nav-wrap a:hover{background:#ffffff25;color:white!important}
+.merkury-main{min-height:50vh}.merkury-main>.site-shell{width:min(1184px,calc(100% - 40px));margin:auto}.merkury-hero{position:relative;isolation:isolate;min-height:var(--merkury-hero-height,480px);padding:65px 28px;display:flex;align-items:center;justify-content:center;text-align:center;color:white;background:#102f4d;overflow:hidden}.merkury-hero:before{content:"";position:absolute;inset:0;z-index:-2;background-image:var(--merkury-hero-image);background-position:center;background-size:var(--merkury-hero-fit,cover);background-repeat:no-repeat}.merkury-hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(120deg,rgba(16,47,77,var(--merkury-overlay,.55)),rgba(23,74,120,calc(var(--merkury-overlay,.55)*.68)))}.merkury-hero.no-image{min-height:280px;background:linear-gradient(125deg,#102f4d,#174a78)}.merkury-hero-inner{max-width:900px}.merkury-hero h1{font:600 clamp(2.5rem,6vw,4.7rem)/1.12 Literata,Georgia,serif;color:#fff;margin:0 0 14px;text-shadow:0 2px 15px #061b30a0}.merkury-hero p{font-size:clamp(1rem,2vw,1.25rem);margin:0;color:#f0f6fb;white-space:normal}
+.page-list{padding:42px 0 68px}.page-list h2,.merkury-sidebar h2{font:600 1.7rem/1.25 Literata,Georgia,serif;color:var(--merkury-ink);margin:0 0 24px}.merkury-post-grid{display:grid;gap:22px}.merkury-post-grid.chronological{grid-template-columns:1fr}.merkury-post-grid.photographic{grid-template-columns:repeat(2,minmax(0,1fr))}.merkury-post-card{min-width:0;background:var(--merkury-card);border:1px solid var(--merkury-line);border-radius:13px;padding:24px;box-shadow:0 6px 22px #10243a0b;transition:transform .2s,box-shadow .2s}.merkury-post-card:hover{transform:translateY(-2px);box-shadow:0 12px 30px #10243a14}.merkury-post-card h3{font:600 1.55rem/1.25 Literata,Georgia,serif;margin:0 0 10px}.merkury-post-card h3 a{color:var(--merkury-ink)}.merkury-post-card p{color:var(--merkury-muted);margin:0 0 14px}.merkury-post-card .read-more{font-weight:750}.merkury-post-grid.chronological .merkury-post-card{min-height:150px}.merkury-post-grid.photographic .merkury-post-card{padding:23px}.merkury-post-grid.photographic .merkury-post-card h3{font-size:1.35rem}
+.merkury-sidebar{margin:0 auto 50px;padding:25px;background:var(--merkury-card);border:1px solid var(--merkury-line);border-radius:12px;max-width:1184px}.merkury-sidebar ul{padding-left:20px;margin:0}.merkury-sidebar li{margin:6px 0}.merkury-single{max-width:900px;margin:55px auto;padding:clamp(24px,5vw,55px);background:var(--merkury-card);border:1px solid var(--merkury-line);border-radius:14px;box-shadow:0 8px 30px #10243a0c}.merkury-single h1{font:600 clamp(2.3rem,5vw,4rem)/1.12 Literata,Georgia,serif;color:var(--merkury-ink);margin:.25em 0 .5em}.merkury-single .breadcrumbs{color:var(--merkury-muted);font-size:.9rem}.merkury-single .page-content{font-size:1.06rem;line-height:1.85;overflow-wrap:anywhere}.merkury-single .page-content h2,.merkury-single .page-content h3{font-family:Literata,Georgia,serif;line-height:1.25}.merkury-single .page-content img{max-width:100%;height:auto;border-radius:10px}.merkury-single .page-content blockquote{border-left:4px solid var(--merkury-accent);background:color-mix(in srgb,var(--merkury-accent) 8%,var(--merkury-card));padding:12px 20px;margin:1.4em 0}.merkury-single .page-content table{width:100%;border-collapse:collapse}.merkury-single .page-content th,.merkury-single .page-content td{border:1px solid var(--merkury-line);padding:9px;text-align:left}
+.merkury-site-footer{margin-top:70px;background:var(--footer-bg,var(--merkury-chrome-bg));color:var(--footer-text,var(--merkury-chrome-text));padding:34px 24px}.merkury-footer-inner{width:min(1184px,100%);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.merkury-footer-inner strong{font-size:1.1rem}.merkury-footer-note{font-size:.9rem;opacity:.9}.merkury-credits{font-size:.75rem;opacity:.75}.merkury-mode-toggle{display:inline-flex;align-items:center;gap:7px;border:1px solid currentColor;border-radius:999px;background:transparent;color:inherit;padding:8px 13px;font:inherit;font-size:.85rem;font-weight:700;cursor:pointer}.merkury-mode-toggle:hover{background:#ffffff20;color:inherit}
+[data-merkury-mode="dark"]{color-scheme:dark;--merkury-paper:#101923;--merkury-ink:#e7eef5;--merkury-card:#182635;--merkury-line:#314456;--merkury-muted:#a9bac9}[data-merkury-mode="dark"] body.merkury-body{background:var(--merkury-paper);color:var(--merkury-ink)}[data-merkury-mode="dark"] .merkury-post-card,[data-merkury-mode="dark"] .merkury-single,[data-merkury-mode="dark"] .merkury-sidebar{background:var(--merkury-card);color:var(--merkury-ink);border-color:var(--merkury-line)}[data-merkury-mode="dark"] .merkury-post-card h3 a,[data-merkury-mode="dark"] .merkury-single h1,[data-merkury-mode="dark"] .page-list h2,[data-merkury-mode="dark"] .merkury-sidebar h2{color:var(--merkury-ink)}[data-merkury-mode="dark"] .merkury-single .page-content{color:var(--merkury-ink)}
+@media(max-width:850px){.merkury-header-inner{padding:18px 0;flex-direction:column;gap:12px}.merkury-nav-wrap{gap:2px}.merkury-post-grid.photographic{grid-template-columns:1fr}.merkury-sidebar{margin-inline:20px}}@media(max-width:600px){.site-shell,.merkury-main>.site-shell{width:calc(100% - 28px)}.merkury-hero{min-height:330px;padding:42px 18px}.merkury-post-card{padding:19px}.merkury-single{margin:28px 14px;padding:22px 18px}.merkury-footer-inner{align-items:flex-start;flex-direction:column}.merkury-nav-wrap a{padding:7px 9px;font-size:.84rem}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+.merkury-compact-header .merkury-header-inner{min-height:62px}.merkury-compact-header .merkury-brand{font-size:1.12rem}.merkury-main>.site-shell{padding-top:0}.merkury-main>.site-shell>.merkury-hero{margin-inline:calc((1184px - min(100vw - 40px,1184px))/2);}
+
+/* Correzioni release 0.2.0 */
+.merkury-home-layout{width:min(1184px,calc(100% - 40px));margin:0 auto 55px;display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:30px;align-items:start}
+.merkury-home-layout>.page-list{min-width:0;padding:42px 0 0}
+.merkury-home-layout .merkury-sidebar{width:100%;max-width:none;margin:42px 0 0;padding:22px;position:sticky;top:24px}
+.merkury-sidebar ul{list-style:none;padding:0}.merkury-sidebar li{margin:8px 0}.merkury-sidebar a{display:flex;align-items:center;gap:9px;padding:7px 9px;border-radius:7px}.merkury-sidebar a:hover{background:color-mix(in srgb,var(--merkury-accent) 12%,transparent)}
+.merkury-category-icon-image{width:20px;height:20px;object-fit:contain;vertical-align:middle;display:inline-block}
+body.merkury-body[data-merkury-mode="dark"]{--merkury-paper:#101923!important;--merkury-ink:#e7eef5!important;--merkury-card:#182635!important;--merkury-line:#314456!important;--merkury-muted:#a9bac9!important;background:var(--merkury-paper);color:var(--merkury-ink)}
+body.merkury-body[data-merkury-mode="dark"] .merkury-post-card,body.merkury-body[data-merkury-mode="dark"] .merkury-single,body.merkury-body[data-merkury-mode="dark"] .merkury-sidebar{background:var(--merkury-card);color:var(--merkury-ink);border-color:var(--merkury-line)}
+@media(max-width:900px){.merkury-home-layout{grid-template-columns:1fr;gap:0}.merkury-home-layout>.page-list{padding-top:24px}.merkury-home-layout .merkury-sidebar{position:static;margin:0 0 35px}}
+
+/* MERKURY — testata, schede editoriali e modalità scura */
+.merkury-hero{position:relative;isolation:isolate;overflow:hidden;background:#10243a}
+.merkury-hero:before{content:"";position:absolute;inset:0;z-index:0;background-image:var(--merkury-hero-image,none);background-position:center;background-size:var(--merkury-hero-fit,cover);background-repeat:no-repeat}
+.merkury-hero:after{content:"";position:absolute;inset:0;z-index:1;background:rgba(4,13,24,var(--merkury-overlay,.55));pointer-events:none}
+.merkury-hero.no-image:before{display:none}
+.merkury-hero-inner{position:relative;z-index:2;width:min(900px,100%);margin:auto;text-shadow:0 2px 16px rgba(0,0,0,.48)}
+.merkury-hero.has-image[style*="contain"]:before{background-color:#10243a}
+.merkury-post-card{display:grid;grid-template-columns:minmax(180px,32%) minmax(0,1fr);align-items:stretch;gap:0;padding:0;overflow:hidden}
+.merkury-post-card.no-image{display:block}
+.merkury-card-image{aspect-ratio:4/3;min-height:0;max-height:290px;overflow:hidden;background:var(--merkury-line);align-self:stretch}
+.merkury-card-image img{display:block;width:100%;height:100%;min-height:0;max-height:290px;object-fit:cover;border-radius:0}
+.merkury-card-body{min-width:0;padding:22px 26px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.merkury-card-body h3{margin:0 0 10px}
+.merkury-card-body p{margin:0 0 14px;line-height:1.65}
+.merkury-card-body .read-more{margin-top:auto;padding-top:4px;color:var(--merkury-primary)}
+.merkury-post-card.no-image .merkury-card-body{padding:24px}
+.merkury-single{background:var(--merkury-card);color:var(--merkury-ink)}
+.merkury-single .page-content{color:inherit}
+.merkury-single .page-content a{color:var(--merkury-primary)}
+
+:root[data-merkury-mode="dark"]{color-scheme:dark;--merkury-paper:#101923;--merkury-ink:#e7eef5;--merkury-card:#192735;--merkury-line:#34495b;--merkury-muted:#b4c3d0;--site-bg:#101923;--surface:#192735;--site-text:#e7eef5;--primary:#82b8e5;--header-bg:#101923;--header-text:#f3f7fb;--footer-bg:#101923;--footer-text:#e7eef5}
+body.merkury-body[data-merkury-mode="dark"]{color-scheme:dark!important;--merkury-paper:#101923!important;--merkury-ink:#e7eef5!important;--merkury-card:#192735!important;--merkury-line:#34495b!important;--merkury-muted:#b4c3d0!important;--site-bg:#101923!important;--surface:#192735!important;--site-text:#e7eef5!important;--primary:#82b8e5!important;--header-bg:#101923!important;--header-text:#f3f7fb!important;--footer-bg:#101923!important;--footer-text:#e7eef5!important;background:#101923!important;color:#e7eef5!important}
+body.merkury-body[data-merkury-mode="dark"] .site-panel,body.merkury-body[data-merkury-mode="dark"] .page-panel,body.merkury-body[data-merkury-mode="dark"] .page-content,body.merkury-body[data-merkury-mode="dark"] .merkury-post-card,body.merkury-body[data-merkury-mode="dark"] .merkury-single,body.merkury-body[data-merkury-mode="dark"] .merkury-sidebar{background-color:#192735!important;color:#e7eef5!important;border-color:#34495b!important}
+body.merkury-body[data-merkury-mode="dark"] .merkury-post-card h3 a,body.merkury-body[data-merkury-mode="dark"] .merkury-single h1,body.merkury-body[data-merkury-mode="dark"] .page-list h2,body.merkury-body[data-merkury-mode="dark"] .merkury-sidebar h2,body.merkury-body[data-merkury-mode="dark"] .merkury-card-body p{color:#e7eef5!important}
+body.merkury-body[data-merkury-mode="dark"] .merkury-card-body .read-more,body.merkury-body[data-merkury-mode="dark"] .merkury-single .page-content a{color:#9bcaf0!important}
+body.merkury-body[data-merkury-mode="dark"] .merkury-site-header,body.merkury-body[data-merkury-mode="dark"] .merkury-site-footer{background:#0b131c!important;color:#f3f7fb!important}
+body.merkury-body[data-merkury-mode="dark"] .merkury-nav-wrap a,body.merkury-body[data-merkury-mode="dark"] .merkury-brand{color:#f3f7fb!important}
+body.merkury-body[data-merkury-mode="dark"] .merkury-mode-toggle{color:#f3f7fb!important;border-color:#9aabba!important}
+@media(max-width:700px){.merkury-post-card{grid-template-columns:1fr}.merkury-card-image{aspect-ratio:16/9;max-height:230px}.merkury-card-image img{height:100%;max-height:230px}.merkury-card-body{padding:19px 20px}}
+
+
+/* MERKURY 1.0.0 — layout definitivo delle schede e gerarchia della testata */
+/* Le schede mantengono due colonne solo su desktop: immagine e contenuto
+   hanno dimensioni indipendenti e non possono sovrapporsi. */
+.merkury-post-card.has-image{
+  display:grid;
+  grid-template-columns:minmax(220px,36%) minmax(0,1fr);
+  align-items:stretch;
+  gap:0;
+  min-width:0;
+}
+.merkury-post-card.has-image .merkury-card-image{
+  position:relative;
+  width:100%;
+  min-width:0;
+  min-height:220px;
+  height:100%;
+  max-height:none;
+  aspect-ratio:auto;
+  overflow:hidden;
+}
+.merkury-post-card.has-image .merkury-card-image img{
+  position:absolute;
+  inset:0;
+  display:block;
+  width:100%;
+  height:100%;
+  min-height:0;
+  max-height:none;
+  object-fit:cover;
+}
+.merkury-post-card.has-image .merkury-card-body{
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  padding:26px 30px;
+  overflow-wrap:anywhere;
+}
+.merkury-post-card.has-image .merkury-card-body h3,
+.merkury-post-card.has-image .merkury-card-body p,
+.merkury-post-card.has-image .merkury-card-body .read-more{
+  position:static;
+  max-width:100%;
+  overflow-wrap:anywhere;
+}
+.merkury-post-card.has-image .merkury-card-body .read-more{
+  display:inline-block;
+  margin-top:12px;
+}
+
+/* La modalità ampia dà più respiro a marchio e navigazione; la compatta
+   riduce nettamente altezza, logo e spaziature. */
+.merkury-site-header .merkury-header-inner{
+  min-height:132px;
+  padding-top:22px;
+  padding-bottom:22px;
+  gap:34px;
+}
+.merkury-site-header .merkury-brand{
+  font-size:1.48rem;
+  gap:15px;
+}
+.merkury-site-header .merkury-brand img{
+  max-height:82px;
+  max-width:220px;
+}
+.merkury-site-header .merkury-mark{
+  width:52px;
+  height:52px;
+  font-size:29px;
+}
+.merkury-site-header .merkury-nav-wrap{
+  gap:9px;
+}
+.merkury-site-header .merkury-nav-wrap a{
+  padding:11px 15px;
+}
+body.merkury-compact-header .merkury-site-header .merkury-header-inner{
+  min-height:64px;
+  padding-top:8px;
+  padding-bottom:8px;
+  gap:18px;
+}
+body.merkury-compact-header .merkury-site-header .merkury-brand{
+  font-size:1.08rem;
+  gap:9px;
+}
+body.merkury-compact-header .merkury-site-header .merkury-brand img{
+  max-height:42px;
+  max-width:150px;
+}
+body.merkury-compact-header .merkury-site-header .merkury-mark{
+  width:34px;
+  height:34px;
+  border-radius:8px;
+  font-size:20px;
+}
+body.merkury-compact-header .merkury-site-header .merkury-nav-wrap{
+  gap:3px;
+}
+body.merkury-compact-header .merkury-site-header .merkury-nav-wrap a{
+  padding:6px 9px;
+  font-size:.86rem;
+}
+@media(max-width:900px){
+  .merkury-site-header .merkury-header-inner,
+  body.merkury-compact-header .merkury-site-header .merkury-header-inner{
+    min-height:0;
+    padding-top:16px;
+    padding-bottom:16px;
+    gap:12px;
+  }
+  .merkury-post-card.has-image{
+    grid-template-columns:minmax(190px,38%) minmax(0,1fr);
+  }
+  .merkury-post-card.has-image .merkury-card-body{padding:20px 22px}
+}
+@media(max-width:760px){
+  .merkury-post-card.has-image{grid-template-columns:minmax(0,1fr)}
+  .merkury-post-card.has-image .merkury-card-image{
+    min-height:0;
+    height:auto;
+    aspect-ratio:16/9;
+    max-height:260px;
+  }
+  .merkury-post-card.has-image .merkury-card-image img{
+    position:static;
+    height:100%;
+    aspect-ratio:16/9;
+  }
+  .merkury-post-card.has-image .merkury-card-body{padding:19px 20px}
+  .merkury-site-header .merkury-brand{font-size:1.2rem}
+}
+
+
+/* MERKURY 1.0.0 — correzione larghezza globale e margini laterali */
+/* Su desktop e tablet il contenuto utilizza tutta la larghezza disponibile,
+   mantenendo un margine massimo di circa 2 cm per lato. */
+@media (min-width: 601px) {
+  .site-shell,
+  .merkury-header-inner,
+  .merkury-main > .site-shell,
+  .merkury-home-layout,
+  .merkury-footer-inner {
+    width: calc(100% - 4cm);
+    max-width: none;
+  }
+  .merkury-single {
+    width: calc(100% - 4cm);
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .merkury-sidebar {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .merkury-main > .site-shell > .merkury-hero {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .merkury-single {
+    width: auto;
+    max-width: none;
+  }
+  .merkury-footer-inner {
+    width: 100%;
+  }
+}
+
+/* Seconda navigazione: ripete in fondo all'elenco la paginazione del CMS. */
+.merkury-bottom-pagination{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:8px;margin:28px 0 8px;width:100%}
+.merkury-bottom-pagination nav,.merkury-bottom-pagination>div,.merkury-bottom-pagination>ul{max-width:100%;flex-wrap:wrap}
+
+/* MERKURY 1.0.0 — archivio cronologico, navigazione articoli e archivio mensile */
+.merkury-home-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,290px);gap:30px;align-items:start}
+.merkury-archive-main{min-width:0}
+.merkury-archive-main .page-list{padding-top:30px}
+.merkury-pagination{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:8px;margin:24px 0;padding:8px 0}
+.merkury-pagination .mk-page-link{display:inline-flex;align-items:center;justify-content:center;min-width:38px;min-height:38px;padding:7px 11px;border:1px solid var(--merkury-line);border-radius:7px;background:var(--merkury-card);color:var(--merkury-ink);text-decoration:none;font-weight:650}
+.merkury-pagination .mk-page-link.current{background:var(--merkury-primary);border-color:var(--merkury-primary);color:#fff}
+.merkury-pagination a.mk-page-link:hover,.merkury-article-navigation a:hover{border-color:var(--merkury-accent);color:var(--merkury-accent)}
+.mk-page-ellipsis{padding:0 3px;color:var(--merkury-muted)}
+.merkury-month-archive{margin-top:28px;padding-top:22px;border-top:1px solid var(--merkury-line)}
+.merkury-month-archive h2{font:600 1.25rem/1.3 Literata,Georgia,serif;margin:0 0 12px;color:var(--merkury-ink)}
+.merkury-month-archive ul{list-style:none;margin:0;padding:0}
+.merkury-month-archive li{margin:5px 0}
+.merkury-month-archive a{display:flex;justify-content:space-between;gap:8px;padding:7px 9px;border-radius:7px;color:var(--merkury-ink);text-decoration:none}
+.merkury-month-archive a:hover,.merkury-month-archive a.active{background:color-mix(in srgb,var(--merkury-accent) 13%,transparent);color:var(--merkury-primary)}
+.merkury-month-archive a span{color:var(--merkury-muted);font-size:.88em}
+.merkury-empty-archive{padding:22px;border:1px dashed var(--merkury-line);border-radius:10px;color:var(--merkury-muted)}
+.merkury-article-navigation{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:36px 0 0;padding-top:22px;border-top:1px solid var(--merkury-line)}
+.merkury-article-navigation a{display:inline-flex;align-items:center;padding:10px 14px;border:1px solid var(--merkury-line);border-radius:8px;color:var(--merkury-primary);text-decoration:none;font-weight:700}
+.merkury-article-navigation .mk-article-home{background:var(--merkury-primary);border-color:var(--merkury-primary);color:#fff}
+@media(max-width:900px){.merkury-home-layout{grid-template-columns:minmax(0,1fr);gap:12px}.merkury-home-layout .merkury-sidebar{order:2}.merkury-article-navigation{justify-content:center}}
+@media(max-width:600px){.merkury-pagination{gap:5px}.merkury-pagination .mk-page-link{min-width:34px;min-height:34px;padding:6px 8px}.merkury-article-navigation{align-items:stretch;flex-direction:column}.merkury-article-navigation a{justify-content:center}}
+
+/* MERKURY 1.0.0 — rifinitura menu archivio laterale (contrasto e posizione) */
+.merkury-home-layout .merkury-sidebar{
+  position:sticky;
+  top:150px; /* sotto la testata ampia da 132px, con margine di sicurezza */
+  align-self:start;
+  z-index:2;
+  background:var(--merkury-card,#fff);
+  color:var(--merkury-ink,#24332b);
+  border-color:var(--merkury-line,#d8e0dc);
+}
+.merkury-month-archive,
+.merkury-month-archive h2,
+.merkury-month-archive li,
+.merkury-month-archive a{
+  color:var(--merkury-ink,#24332b);
+}
+.merkury-month-archive a span{color:var(--merkury-muted,#66756d)}
+.merkury-month-archive a:hover,
+.merkury-month-archive a.active{
+  background:color-mix(in srgb,var(--merkury-accent,#245b45) 18%,var(--merkury-card,#fff));
+  color:var(--merkury-ink,#24332b);
+}
+body.merkury-compact-header .merkury-home-layout .merkury-sidebar{top:82px}
+body.merkury-body[data-merkury-mode="dark"] .merkury-home-layout .merkury-sidebar{
+  background:#192735!important;
+  color:#eaf2f8!important;
+  border-color:#40566a!important;
+}
+body.merkury-body[data-merkury-mode="dark"] .merkury-month-archive,
+body.merkury-body[data-merkury-mode="dark"] .merkury-month-archive h2,
+body.merkury-body[data-merkury-mode="dark"] .merkury-month-archive li,
+body.merkury-body[data-merkury-mode="dark"] .merkury-month-archive a{
+  color:#eaf2f8!important;
+}
+body.merkury-body[data-merkury-mode="dark"] .merkury-month-archive a span{color:#c0cfdb!important}
+body.merkury-body[data-merkury-mode="dark"] .merkury-month-archive a:hover,
+body.merkury-body[data-merkury-mode="dark"] .merkury-month-archive a.active{
+  background:#29445a!important;
+  color:#fff!important;
+}
+@media(max-width:900px){
+  .merkury-home-layout .merkury-sidebar,
+  body.merkury-compact-header .merkury-home-layout .merkury-sidebar{
+    position:static;
+    top:auto;
+  }
+}

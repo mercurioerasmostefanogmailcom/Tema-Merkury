@@ -1,0 +1,11 @@
+MERKURY — CREDITI E LICENZE
+
+BASE DI PARTENZA
+Twenty Twenty-Five WordPress Theme, copyright 2024-2026 WordPress.org and contributors. GNU General Public License v2 or later. https://www.gnu.org/licenses/gpl-2.0.html
+Merkury è un'opera derivata e mantiene la compatibilità con i termini GPL applicabili al materiale riutilizzato.
+
+FONT RIUTILIZZATI
+Manrope — The Manrope Project Authors. SIL Open Font License 1.1. https://github.com/sharanda/manrope
+Literata — Google Fonts contributors. SIL Open Font License 1.1. https://github.com/googlefonts/literata
+
+Le licenze dei font sono reperibili nei rispettivi progetti originali.
